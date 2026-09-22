@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="author" content="Gagana Chathuranga" />
+  <meta name="description" content="Gagana Chathuranga — IT Undergraduate &amp; Content Creator. Explore my social links and beginner-friendly tech guides about websites, domains and Google Search Console." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://gaganachathuranga.com.lk/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Gagana Chathuranga" />
+  <meta property="og:title" content="Gagana Chathuranga | Tech Guides & Social Links" />
+  <meta property="og:description" content="IT Undergraduate | Content Creator · Connect with me on social media." />
+  <meta property="og:url" content="https://gaganachathuranga.com.lk/" />
+  <meta property="og:image" content="https://gaganachathuranga.com.lk/share-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Gagana Chathuranga — IT Undergraduate and Content Creator" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gagana Chathuranga | Tech Guides & Social Links" />
+  <meta name="twitter:description" content="IT Undergraduate | Content Creator · Find my social profiles." />
+  <meta name="twitter:image" content="https://gaganachathuranga.com.lk/share-card.png" />
+  <title>Gagana Chathuranga | IT Undergraduate &amp; Content Creator</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Gagana Chathuranga","url":"https://gaganachathuranga.com.lk/","description":"IT Undergraduate | Content Creator","sameAs":["https://www.instagram.com/_chathu_x__/","https://www.facebook.com/gagana.bettegodage/","https://www.tiktok.com/@ggana48","https://www.linkedin.com/in/gagana-chathuranga-6582b7426"]}</script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0b1020;
+      --card: rgba(255,255,255,0.08);
+      --card-hover: rgba(255,255,255,0.14);
+      --text: #f5f7ff;
+      --muted: #aeb7cc;
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+    }
+    body {
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 15% 20%, rgba(98, 74, 255, .35), transparent 32%),
+        radial-gradient(circle at 85% 15%, rgba(0, 207, 255, .22), transparent 28%),
+        radial-gradient(circle at 50% 90%, rgba(255, 59, 148, .20), transparent 34%),
+        var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 28px 16px;
+    }
+    .wrap {
+      width: min(100%, 520px);
+      background: rgba(10, 15, 32, .72);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      padding: 34px 22px 22px;
+      text-align: center;
+    }
+    .avatar-wrap {
+      width: 190px;
+      height: 190px;
+      margin: 0 auto 22px;
+      position: relative;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 4px solid rgba(255,255,255,.88);
+      box-shadow: 0 16px 42px rgba(84, 90, 255, .38);
+      background: linear-gradient(135deg, #7c5cff, #00c7ff 55%, #ff4f9a);
+      isolation: isolate;
+    }
+    /* A blurred copy of profile.jpg fills the circle, so a tall full-body
+       photo still looks polished instead of leaving plain empty side space. */
+    .avatar-wrap::before {
+      content: "";
+      position: absolute;
+      inset: -18px;
+      background:
+        linear-gradient(rgba(10,15,32,.12), rgba(10,15,32,.12)),
+        url("profile.jpg") center / cover no-repeat;
+      filter: blur(12px) saturate(1.08);
+      transform: scale(1.12);
+      z-index: 0;
+      opacity: .95;
+    }
+    .avatar {
+      width: 92%;
+      height: 92%;
+      border-radius: 50%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      position: relative;
+      z-index: 2;
+      background: rgba(8, 12, 26, .18);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.16);
+    }
+    .avatar-fallback {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      z-index: 1;
+    }
+    h1 { font-size: clamp(1.8rem, 6vw, 2.35rem); line-height: 1.1; }
+    .bio { color: #d8deec; margin: 14px auto 26px; line-height: 1.55; max-width: 390px; }
+    .links { display: grid; gap: 12px; }
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 15px 17px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+      text-align: left;
+    }
+    .link:hover {
+      transform: translateY(-2px);
+      background: var(--card-hover);
+      border-color: rgba(255,255,255,.24);
+    }
+    .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.09);
+      flex: 0 0 42px;
+    }
+    .icon svg { width: 23px; height: 23px; fill: currentColor; }
+
+    /* Recognizable social brand icons on the original dark link cards. */
+    .icon { color: #fff; box-shadow: 0 4px 13px rgba(0,0,0,.18); }
+    .icon-instagram { background: linear-gradient(35deg, #feda75 0%, #fa7e1e 25%, #d62976 54%, #962fbf 76%, #4f5bd5 100%); }
+    .icon-facebook { background: #1877f2; }
+    .icon-tiktok { background: #101015; }
+    .icon-tiktok svg { filter: drop-shadow(-1.3px -1px 0 #25f4ee) drop-shadow(1.3px 1px 0 #fe2c55); }
+    .icon-linkedin { background: #0a66c2; }
+    .icon-whatsapp { background: #25d366; }
+    @media (prefers-reduced-motion: reduce) { .link { transition: none; } }
+    .link-text { flex: 1; }
+    .link-title { font-weight: 700; font-size: 1rem; }
+    .link-sub { color: var(--muted); font-size: .82rem; margin-top: 2px; overflow-wrap: anywhere; }
+    .arrow { color: #b8c2d9; font-size: 1.2rem; }
+    footer { margin-top: 24px; color: #8490aa; font-size: .8rem; }
+    @media (max-width: 420px) {
+      .wrap { padding: 28px 16px 18px; border-radius: 22px; }
+      .avatar-wrap { width: 168px; height: 168px; }
+      .link { padding: 13px 14px; }
+    }
+
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+    body::before, body::after { content:""; position:fixed; width:270px; height:270px; border-radius:50%; filter:blur(88px); opacity:.22; pointer-events:none; z-index:-1; }
+    body::before { background:#8f62fb; top:-120px; left:-70px; }
+    body::after { background:#00bbdb; bottom:-130px; right:-100px; }
+    .wrap { position:relative; animation: appear .65s ease both; }
+    .avatar-wrap { transition: box-shadow .3s ease, transform .3s ease; }
+    .avatar-wrap:hover { transform:translateY(-3px); box-shadow:0 16px 46px rgba(112,108,255,.57),0 0 0 7px rgba(255,255,255,.035); }
+    .intro-label { font-size:.76rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:#c7bbff; margin:0 auto 17px; }
+    h1 { letter-spacing:-.045em; }
+    .bio { margin-bottom: 22px; }
+    .quick-actions { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:19px; }
+    button { font:inherit; }
+    .action { display:inline-flex; justify-content:center; align-items:center; gap:9px; min-height:45px; padding:11px 10px; border-radius:13px; border:1px solid rgba(255,255,255,.22); color:#fff; background:rgba(255,255,255,.085); cursor:pointer; font-size:.87rem; font-weight:680; transition:background .2s ease,transform .2s ease,border-color .2s ease; }
+    .action:hover { background:rgba(255,255,255,.16); transform:translateY(-2px); border-color:rgba(255,255,255,.37); }
+    .action-primary { background:linear-gradient(120deg,#604fff,#9a48dc); border-color:rgba(188,180,255,.42); }
+    .action-primary:hover { background:linear-gradient(120deg,#7264ff,#aa58ec); }
+    .action svg { width:17px; height:17px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+    .section-hint { text-align:left; font-size:.73rem; font-weight:750; letter-spacing:.12em; color:#b2bed7; text-transform:uppercase; margin:0 3px 12px; }
+    .link { will-change:transform; }
+    .link:focus-visible,.action:focus-visible,.close-dialog:focus-visible,.qr-download:focus-visible { outline:3px solid #b7a9ff; outline-offset:3px; }
+    .link:nth-child(1){animation:rise .48s .06s both}.link:nth-child(2){animation:rise .48s .13s both}.link:nth-child(3){animation:rise .48s .20s both}.link:nth-child(4){animation:rise .48s .27s both}.link:nth-child(5){animation:rise .48s .34s both}
+    .link:active,.action:active { transform:scale(.99); }
+    .link .arrow { transition:transform .2s ease; }
+    .link:hover .arrow { transform:translateX(3px); }
+    .feedback { min-height:20px; margin:7px 0 2px; color:#bbf7d0; font-size:.82rem; }
+    .footer-domain { display:block; margin-top:6px; color:#9ba7c4; font-size:.77rem; text-decoration:none; }
+    .footer-domain:hover { color:#fff; text-decoration:underline; }
+    .qr-dialog { border:1px solid rgba(255,255,255,.19); background:#12192c; color:#fff; width:min(90vw,390px); margin:auto; border-radius:24px; padding:24px; box-shadow:0 26px 90px rgba(0,0,0,.65); text-align:center; }
+    .qr-dialog::backdrop { background:rgba(1,5,15,.76); backdrop-filter:blur(7px); }
+    .qr-dialog h2 { font-size:1.25rem; margin-bottom:8px; }
+    .qr-dialog p { color:#bac4d8; font-size:.9rem; line-height:1.5; }
+    .qr-box { background:#fff; padding:13px; margin:20px auto 12px; border-radius:18px; width:min(100%,256px); }
+    .qr-box img { display:block; width:100%; height:auto; image-rendering:pixelated; }
+    .qr-url { color:#c2bafa!important; overflow-wrap:anywhere; font-size:.8rem!important; }
+    .dialog-actions { display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-top:20px; }
+    .qr-download { text-decoration:none; }
+    .close-dialog { position:absolute; right:13px; top:11px; background:rgba(255,255,255,.09); color:#fff; border:0; border-radius:50%; width:32px; height:32px; font-size:20px; cursor:pointer; }
+    .qr-dialog { position:relative; }
+    @keyframes appear { from{ opacity:0;transform:translateY(12px) } to{opacity:1;transform:translateY(0)} }
+    @keyframes rise { from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)} }
+    @media(max-width:420px) { .wrap { padding-top:29px; } .avatar-wrap { margin-bottom:18px; } .bio { margin-top:12px; } }
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+    /* User-selectable light/dark palette; brand logos retain their original colors. */
+    .top-tools { display:flex; justify-content:flex-end; margin:-10px -2px 8px; }
+    .theme-toggle { display:inline-flex; gap:7px; align-items:center; justify-content:center; border:1px solid var(--border); border-radius:999px; padding:8px 12px; min-height:36px; background:var(--card); color:var(--text); font-size:.78rem; font-weight:700; cursor:pointer; transition:background .2s,transform .2s; }
+    .theme-toggle:hover { background:var(--card-hover); transform:translateY(-1px); }
+    .theme-toggle svg { width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+    .theme-toggle:focus-visible { outline:3px solid #9485ff; outline-offset:3px; }
+    html[data-theme="light"] { --bg:#eef2ff; --card:rgba(255,255,255,.86); --card-hover:rgba(255,255,255,.99); --text:#18213a; --muted:#515e77; --border:rgba(73,84,120,.20); --shadow:0 18px 58px rgba(56,68,123,.13); color-scheme:light; }
+    html[data-theme="light"] body { background:radial-gradient(circle at 10% 15%,rgba(130,116,255,.20),transparent 34%),radial-gradient(circle at 92% 20%,rgba(52,190,237,.18),transparent 30%),radial-gradient(circle at 55% 92%,rgba(255,119,178,.12),transparent 34%),var(--bg); }
+    html[data-theme="light"] .wrap { background:rgba(255,255,255,.80); }
+    html[data-theme="light"] .bio { color:#485370; }
+    html[data-theme="light"] .intro-label { color:#5642bc; }
+    html[data-theme="light"] .section-hint { color:#586782; }
+    html[data-theme="light"] .action:not(.action-primary) { background:rgba(255,255,255,.90); color:#27334f; border-color:rgba(61,74,110,.25); }
+    html[data-theme="light"] .action:not(.action-primary):hover { background:#fff; }
+    html[data-theme="light"] .link { box-shadow:0 4px 20px rgba(34,48,86,.035); }
+    html[data-theme="light"] .link:hover { border-color:rgba(76,81,144,.40); }
+    html[data-theme="light"] .arrow { color:#59657d; }
+    html[data-theme="light"] footer { color:#65728d; }
+    html[data-theme="light"] .footer-domain { color:#4f46b5; }
+    html[data-theme="light"] .footer-domain:hover { color:#362e8f; }
+    html[data-theme="light"] .feedback { color:#14744d; }
+    .quick-actions .action { text-decoration:none; }
+    .action:focus-visible { outline:3px solid #a9a0ff; outline-offset:3px; }
+    @media(max-width:380px) { .quick-actions {gap:8px;} .quick-actions .action {font-size:.79rem;padding:10px 6px;} }
+
+    .site-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin:4px 0 26px}.site-nav a{color:var(--text);text-decoration:none;border:1px solid var(--border);background:var(--card);border-radius:999px;padding:7px 12px;font-size:.78rem;font-weight:700}.site-nav a:hover{background:var(--card-hover)}.guides-panel{margin-top:30px;padding-top:25px;border-top:1px solid var(--border);text-align:left}.guides-panel h2{font-size:1.35rem;letter-spacing:-.02em;margin:0 0 8px}.guides-panel .guides-intro{font-size:.9rem;color:var(--muted);line-height:1.6;margin:0 0 14px}.guide-card{display:block;padding:15px 16px;border:1px solid var(--border);background:var(--card);border-radius:15px;margin:10px 0;text-decoration:none;color:var(--text);transition:transform .2s,background .2s}.guide-card:hover{transform:translateY(-2px);background:var(--card-hover)}.guide-card .tag{display:block;color:#c2b6ff;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:5px}.guide-card strong{display:block;line-height:1.35}.guide-card small{display:block;color:var(--muted);line-height:1.55;margin-top:6px;font-size:.81rem}.guide-more{display:inline-block;margin-top:8px;color:#bcb5ff;font-weight:750;font-size:.85rem}.site-footer-links{margin-top:9px}.site-footer-links a{color:var(--muted);margin:0 6px;text-decoration:underline;text-underline-offset:3px}@media(prefers-reduced-motion:reduce){.guide-card{transition:none}}
+  </style>
+</head>
+<body>
+  <main class="wrap" id="profile">
+    <div class="top-tools"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch website theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><span id="theme-label">Light mode</span>
+    </button></div>
+    <nav class="site-nav" aria-label="Site navigation"><a href="">Home</a><a href="tech-guides.html">Tech Guides</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="intro-label">MY CORNER OF THE INTERNET</div>
+    <div class="avatar-wrap" aria-label="Gagana Chathuranga profile photo">
+      <div class="avatar-fallback" aria-hidden="true">GC</div>
+      <img class="avatar" src="profile.jpg" alt="Gagana Chathuranga profile photo" onerror="this.style.display='none'" />
+    </div>
+    <h1>Gagana Chathuranga</h1>
+    <p class="bio">IT Undergraduate | Content Creator</p>
+
+    <div class="quick-actions" aria-label="Profile actions">
+      <button class="action action-primary" type="button" id="share-btn" aria-label="Share Gagana Chathuranga profile">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m0 0L7 8m5-5 5 5M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>Share profile
+      </button>
+      <button class="action" type="button" id="copy-profile-btn" aria-label="Copy website link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg>Copy link
+      </button>
+      <button class="action" type="button" id="qr-btn" aria-haspopup="dialog" aria-controls="qr-dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h3v3h-3zM20 14v3m-3 3h4m-7 0v1"/></svg>QR code
+      </button>
+      <a class="action" href="gagana-chathuranga.vcf" download="Gagana-Chathuranga.vcf" aria-label="Download Gagana Chathuranga contact card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg>Save contact
+      </a>
+    </div>
+    <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+    <div class="section-hint">FIND ME ON</div>
+    <section class="links" aria-label="Social media links">
+      <a class="link" href="https://www.instagram.com/_chathu_x__/" target="_blank" rel="noopener noreferrer">
+        <span class="icon icon-instagram" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm11 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
+        </span>
+        <span class="link-text"><div class="link-title">Instagram</div><div class="link-sub">@_chathu_x__</div></span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link" href="https://web.facebook.com/gagana.bettegodage/" target="_blank" rel="noopener noreferrer">
+        <span class="icon icon-facebook" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.8l.4-3.2h-3.2V8.75c0-.93.26-1.56 1.61-1.56H16.8V4.33c-.29-.04-1.29-.13-2.46-.13-2.44 0-4.11 1.49-4.11 4.23v2.37H7.47V14h2.76v8h3.27Z"/></svg>
+        </span>
+        <span class="link-text"><div class="link-title">Facebook</div><div class="link-sub">Gagana Chathuranga</div></span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link" href="https://www.tiktok.com/@ggana48" target="_blank" rel="noopener noreferrer">
+        <span class="icon icon-tiktok" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M16.5 3c.35 1.8 1.4 3 3.5 3.6v3.1a8.3 8.3 0 0 1-3.5-1v6.1A6.2 6.2 0 1 1 10.3 8.6v3.2a3.1 3.1 0 1 0 2.9 3.1V3h3.3Z"/></svg>
+        </span>
+        <span class="link-text"><div class="link-title">TikTok</div><div class="link-sub">@ggana48</div></span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link" href="https://lk.linkedin.com/in/gagana-chathuranga-6582b7426" target="_blank" rel="noopener noreferrer">
+        <span class="icon icon-linkedin" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 13.8c0-3.76-2-5.51-4.66-5.51-2.15 0-3.11 1.18-3.65 2.02V8.5H9.2V21h3.49v-6.18c0-1.63.31-3.2 2.33-3.2 1.99 0 2.02 1.86 2.02 3.31V21H21v-7.2Z"/></svg>
+        </span>
+        <span class="link-text"><div class="link-title">LinkedIn</div><div class="link-sub">Gagana Chathuranga</div></span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="link" href="https://wa.me/94741641120" target="_blank" rel="noopener noreferrer">
+        <span class="icon icon-whatsapp" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.7 11.7 0 0 0 2.1 17.6L.5 23.5l6-1.6A11.7 11.7 0 0 0 20.5 3.5ZM12 21a9.2 9.2 0 0 1-4.69-1.28l-.34-.2-3.56.95.95-3.47-.22-.36A9.2 9.2 0 1 1 12 21Zm5.05-6.88c-.28-.14-1.63-.8-1.88-.89-.25-.09-.43-.14-.61.14-.18.28-.7.89-.86 1.07-.16.18-.32.21-.6.07-.28-.14-1.17-.43-2.23-1.37a8.36 8.36 0 0 1-1.55-1.93c-.16-.28-.02-.43.12-.57.13-.13.28-.32.41-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.29s.98 2.65 1.12 2.83c.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.57.66.21 1.25.18 1.72.11.52-.08 1.63-.67 1.86-1.31.23-.64.23-1.2.16-1.31-.07-.12-.25-.18-.53-.32Z"/></svg>
+        </span>
+        <span class="link-text"><div class="link-title">WhatsApp</div><div class="link-sub">074 164 1120</div></span>
+        <span class="arrow">›</span>
+      </a>
+    </section>
+
+<section class="guides-panel" aria-labelledby="guides-heading"><div class="section-hint">LEARN WITH ME</div><h2 id="guides-heading">Tech Guides ✨</h2><p class="guides-intro">Beginner-friendly articles on building websites, connecting domains and helping Google discover your pages.</p><a class="guide-card" href="build-and-host-personal-website.html"><span class="tag">Website basics · 8 min read</span><strong>How to Build and Host a Personal Website with Cloudflare</strong><small>A beginner-friendly walkthrough of preparing a static website, publishing it on Cloudflare and connecting a custom domain.</small></a><a class="guide-card" href="connect-custom-domain-cloudflare.html"><span class="tag">Domains &amp; DNS · 7 min read</span><strong>How to Connect a Custom Domain to a Cloudflare Website</strong><small>Understand DNS, nameservers, conflicting records and HTTPS before connecting a domain to your static site.</small></a><a class="guide-card" href="get-website-on-google.html"><span class="tag">SEO basics · 7 min read</span><strong>How to Help Google Discover Your New Website</strong><small>A practical introduction to Search Console, sitemaps, URL inspection and the difference between discovery and indexing.</small></a><a class="guide-more" href="tech-guides.html">Explore all guides →</a></section>
+    <footer>© 2026 Gagana Chathuranga <a class="footer-domain" href="https://gaganachathuranga.com.lk/">gaganachathuranga.com.lk</a><div class="site-footer-links"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></div></footer>
+  </main>
+  <dialog id="qr-dialog" class="qr-dialog" aria-labelledby="qr-title">
+    <button class="close-dialog" id="close-dialog" type="button" aria-label="Close QR code dialog">×</button>
+    <h2 id="qr-title">Scan to connect ✨</h2>
+    <p>Point your camera at the code to open Gagana's social links.</p>
+    <div class="qr-box"><img src="qr-code.png" width="230" height="230" alt="QR code linking to gaganachathuranga.com.lk" loading="lazy" /></div>
+    <p class="qr-url">gaganachathuranga.com.lk</p>
+    <div class="dialog-actions">
+      <a class="action qr-download" href="qr-code.png" download="gagana-chathuranga-qr.png">Save QR</a>
+      <button class="action action-primary" type="button" id="copy-btn">Copy link</button>
+    </div>
+  </dialog>
+  <script>
+    (() => {
+      const url = 'https://gaganachathuranga.com.lk/';
+      const feedback = document.getElementById('feedback');
+      const dialog = document.getElementById('qr-dialog');
+      const announce = message => { feedback.textContent = message; };
+      async function copyLink() {
+        try {
+          if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+          await navigator.clipboard.writeText(url);
+          announce('Profile link copied!');
+          return true;
+        } catch (_) {
+          // Browsers that disallow clipboard access still let visitors copy the visible URL.
+          announce('Copy this link: ' + url);
+          return false;
+        }
+      }
+      const root = document.documentElement;
+      const themeButton = document.getElementById('theme-toggle');
+      const themeLabel = document.getElementById('theme-label');
+      const applyTheme = theme => {
+        const light = theme === 'light';
+        root.dataset.theme = light ? 'light' : 'dark';
+        themeLabel.textContent = light ? 'Dark mode' : 'Light mode';
+        themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', light ? '#eef2ff' : '#0b1020');
+      };
+      let theme = 'dark';
+      try { theme = localStorage.getItem('gagana-site-theme') === 'light' ? 'light' : 'dark'; } catch (_) {}
+      applyTheme(theme);
+      themeButton.addEventListener('click', () => {
+        theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        applyTheme(theme);
+        try { localStorage.setItem('gagana-site-theme', theme); } catch (_) {}
+      });
+      document.getElementById('copy-profile-btn').addEventListener('click', copyLink);
+      document.getElementById('share-btn').addEventListener('click', async () => {
+        if (navigator.share) {
+          try {
+            await navigator.share({title:'Gagana Chathuranga',text:'Find my social profiles',url});
+            return;
+          } catch (error) {
+            if (error.name === 'AbortError') return;
+          }
+        }
+        await copyLink();
+      });
+      document.getElementById('qr-btn').addEventListener('click', () => {
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+        else { dialog.setAttribute('open', ''); document.getElementById('close-dialog').focus(); }
+      });
+      document.getElementById('close-dialog').addEventListener('click', () => dialog.close?.() ?? dialog.removeAttribute('open'));
+      dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close?.(); });
+      document.getElementById('copy-btn').addEventListener('click', async () => {
+        if (await copyLink()) dialog.close?.();
+        else { dialog.close?.(); }
+      });
+    })();
+  </script>
+</body>
+</html>
