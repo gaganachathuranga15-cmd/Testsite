@@ -233,7 +233,27 @@
     @media(max-width:380px) { .quick-actions {gap:8px;} .quick-actions .action {font-size:.79rem;padding:10px 6px;} }
 
     .site-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin:4px 0 26px}.site-nav a{color:var(--text);text-decoration:none;border:1px solid var(--border);background:var(--card);border-radius:999px;padding:7px 12px;font-size:.78rem;font-weight:700}.site-nav a:hover{background:var(--card-hover)}.guides-panel{margin-top:30px;padding-top:25px;border-top:1px solid var(--border);text-align:left}.guides-panel h2{font-size:1.35rem;letter-spacing:-.02em;margin:0 0 8px}.guides-panel .guides-intro{font-size:.9rem;color:var(--muted);line-height:1.6;margin:0 0 14px}.guide-card{display:block;padding:15px 16px;border:1px solid var(--border);background:var(--card);border-radius:15px;margin:10px 0;text-decoration:none;color:var(--text);transition:transform .2s,background .2s}.guide-card:hover{transform:translateY(-2px);background:var(--card-hover)}.guide-card .tag{display:block;color:#c2b6ff;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:5px}.guide-card strong{display:block;line-height:1.35}.guide-card small{display:block;color:var(--muted);line-height:1.55;margin-top:6px;font-size:.81rem}.guide-more{display:inline-block;margin-top:8px;color:#bcb5ff;font-weight:750;font-size:.85rem}.site-footer-links{margin-top:9px}.site-footer-links a{color:var(--muted);margin:0 6px;text-decoration:underline;text-underline-offset:3px}@media(prefers-reduced-motion:reduce){.guide-card{transition:none}}
-  </style>
+  
+/* UI refresh: ocean blue, mint and warm white */
+:root{--bg:#eef7fb;--card:#fff;--card-hover:#f0fafb;--text:#17324a;--muted:#587083;--border:#d6e8ed;--shadow:0 22px 70px rgba(17,74,95,.12)}
+body{background:radial-gradient(circle at 10% 5%,#c9f5eb 0,transparent 32%),radial-gradient(circle at 94% 26%,#d9e9ff 0,transparent 36%),var(--bg);padding:34px 16px 54px}
+.wrap{width:min(100%,640px);padding:30px clamp(20px,5vw,42px) 28px;border-radius:28px;background:rgba(255,255,255,.94);box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:none}
+.intro-label{color:#147c84}.bio{color:var(--muted)}.section-hint{color:#496b7a}.avatar-wrap{width:158px;height:158px;border:5px solid #fff;box-shadow:0 12px 32px rgba(20,130,145,.19)}h1{color:var(--text);font-size:clamp(2rem,5vw,2.55rem)}
+.site-nav{margin:12px 0 28px;gap:8px}.site-nav a{background:#eef7f8;border-color:#d6e8ed;color:#17495c;padding:10px 15px;font-size:.86rem}.site-nav a:hover{background:#d8f1ed}
+.quick-actions{gap:12px}.action{min-height:48px;border-color:#cde1e8;background:#f0f7f9;color:#23475a}.action:hover{background:#e2f1f4;border-color:#8cbac5}.action-primary{background:#087e89;color:#fff;border-color:#087e89}.action-primary:hover{background:#096a76}
+.link,.guide-card{background:#fff;border:1px solid #d8e8ed;box-shadow:0 4px 18px rgba(30,85,110,.045);border-radius:17px}.link:hover,.guide-card:hover{background:#f1fbfa;border-color:#7bc6be;box-shadow:0 12px 26px rgba(30,85,110,.09)}.link-title,.guide-card strong{color:#193b50}.link-sub,.guide-card small{color:#60778a}.arrow{color:#248d98}.guides-panel{border-top-color:#d6e8ed}.guides-panel .tag,.guide-more{color:#087e89}.top-tools .theme-toggle{background:#eef7f8;border-color:#d6e8ed;color:#1c5161}.feedback{color:#087a5b}.site-footer-links a,.footer-domain{color:#33687b}footer{color:#60778a}
+html[data-theme="light"]{--bg:#eef7fb;--card:#fff;--card-hover:#f0fafb;--text:#17324a;--muted:#587083;--border:#d6e8ed;--shadow:0 22px 70px rgba(17,74,95,.12)}
+html[data-theme="light"] body{background:radial-gradient(circle at 10% 5%,#c9f5eb 0,transparent 32%),radial-gradient(circle at 94% 26%,#d9e9ff 0,transparent 36%),var(--bg)}
+html[data-theme="light"] .wrap{background:rgba(255,255,255,.94)}
+html[data-theme="dark"]{--bg:#101e2b;--card:#1d3445;--card-hover:#254658;--text:#f0fbff;--muted:#b6cbd6;--border:#38576a;--shadow:0 22px 70px rgba(0,0,0,.2)}
+html[data-theme="dark"] body{background:radial-gradient(circle at 10% 5%,#184d53 0,transparent 34%),radial-gradient(circle at 95% 25%,#1b385d 0,transparent 36%),var(--bg)}
+html[data-theme="dark"] .wrap{background:#172a3b}html[data-theme="dark"] .bio,html[data-theme="dark"] .section-hint,html[data-theme="dark"] .link-sub,html[data-theme="dark"] .guide-card small{color:var(--muted)}
+html[data-theme="dark"] .link,html[data-theme="dark"] .guide-card{background:var(--card);border-color:var(--border)}html[data-theme="dark"] .link-title,html[data-theme="dark"] .guide-card strong,html[data-theme="dark"] h1{color:var(--text)}
+html[data-theme="dark"] .site-nav a,html[data-theme="dark"] .theme-toggle,html[data-theme="dark"] .action:not(.action-primary){background:#243f50;color:#effbff;border-color:var(--border)}
+html[data-theme="dark"] .guides-panel{border-top-color:var(--border)}html[data-theme="dark"] .guides-panel .tag,html[data-theme="dark"] .guide-more{color:#8ee1d4}
+@media(max-width:520px){body{padding:14px 10px 32px}.wrap{padding:23px 17px;border-radius:21px}.avatar-wrap{width:138px;height:138px}.site-nav a{padding:9px 11px}.link{padding:14px}.quick-actions{grid-template-columns:1fr 1fr}}
+
+</style>
 </head>
 <body>
   <main class="wrap" id="profile">
@@ -347,10 +367,10 @@
         root.dataset.theme = light ? 'light' : 'dark';
         themeLabel.textContent = light ? 'Dark mode' : 'Light mode';
         themeButton.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', light ? '#eef2ff' : '#0b1020');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', light ? '#eef7fb' : '#101e2b');
       };
-      let theme = 'dark';
-      try { theme = localStorage.getItem('gagana-site-theme') === 'light' ? 'light' : 'dark'; } catch (_) {}
+      let theme = 'light';
+      try { theme = localStorage.getItem('gagana-site-theme') === 'dark' ? 'dark' : 'light'; } catch (_) {}
       applyTheme(theme);
       themeButton.addEventListener('click', () => {
         theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
